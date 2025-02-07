@@ -196,6 +196,25 @@ body {
   }
 }
 
+/* Контейнер для горизонтальной прокрутки ////////////////////////////////*/
+.horizontal-scroll-container {
+  overflow-x: auto; /* Включаем горизонтальную прокрутку */
+  white-space: nowrap; /* Запрещаем перенос элементов на новую строку */
+  scrollbar-width: none; /* Убираем полосу прокрутки (для Firefox) */
+  -ms-overflow-style: none; /* Убираем полосу прокрутки (для IE и Edge) */
+}
+
+/* Скрываем полосу прокрутки для WebKit-браузеров (Chrome, Safari) */
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none; /* Полностью скрываем полосу прокрутки */
+}
+
+/* Элементы внутри контейнера */
+.inline-flex {
+  display: inline-flex; /* Располагаем элементы в строку */
+  gap: 1rem; /* Отступ между элементами */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
