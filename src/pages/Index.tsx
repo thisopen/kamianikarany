@@ -16,7 +16,7 @@ const Index = () => {
   useEffect(() => {
     // Настройки Typed.js
     const options = {
-      strings: ["kamianikarani"], // Текст для печатания
+      strings: ["kamianikarani"], // Текст для 
       typeSpeed: 170, // Скорость печатания
       showCursor: true, // Показывать курсор
       cursorChar: "|", // Символ курсора
