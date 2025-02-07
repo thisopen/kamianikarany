@@ -62,6 +62,22 @@ body {
   white-space: pre; /* Фиксируем позицию текста */
 }
 
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 6rem; /* Уменьшаем размер текста */
+    letter-spacing: 0.05em; /* Уменьшаем расстояние между буквами */
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 4rem; /* Ещё больше уменьшаем размер текста */
+    letter-spacing: 0.02em; /* Минимальное расстояние между буквами */
+  }
+}
+
 /* Фиксированное пространство для курсора */
 .typed-cursor {
   font-family: 'Sen', sans-serif;
