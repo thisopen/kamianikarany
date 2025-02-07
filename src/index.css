@@ -54,28 +54,47 @@ body {
 
 /* Стили для заголовка проекта */
 .project-title {
-  font-family: 'Sen', sans-serif; /* Применяем Sen ExtraBold */
-  font-weight: 800; /* Жирность шрифта */
-  font-size: clamp(4rem, 12vw, 8rem); /* Относительный размер текста */
-  letter-spacing: 0.1em; /* Расстояние между буквами */
-  text-transform: lowercase; /* Стиль текста */
-  white-space: pre; /* Фиксируем позицию текста */
+  font-family: 'Sen', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1rem, 12vw, 8rem); /* Плавное изменение размера */
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
   text-align: center; /* Центрируем текст */
 }
+
+/* Адаптация сетки для мобильных устройств */
+.grid.grid-cols-1.md\:grid-cols-5.gap-8 {
+  grid-template-columns: repeat(1, minmax(0, 1fr)); /* Одна колонка для мобильных */
+  gap: 1rem; /* Меньший отступ для мобильных */
+}
+
+@media (min-width: 768px) {
+  .grid.grid-cols-1.md\:grid-cols-5.gap-8 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Две колонки для планшетов */
+    gap: 2rem; /* Больший отступ для планшетов */
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid.grid-cols-1.md\:grid-cols-5.gap-8 {
+    grid-template-columns: repeat(5, minmax(0, 1fr)); /* Пять колонок для десктопа */
+    gap: 2rem; /* Больший отступ для десктопа */
+  }
+}  
 
 /* Адаптация для планшетов */
 @media (max-width: 768px) {
   .project-title {
-    font-size: 6rem; /* Уменьшаем размер текста */
-    letter-spacing: 0.05em; /* Уменьшаем расстояние между буквами */
+    letter-spacing: 0.05em;
   }
 }
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 480px) {
   .project-title {
-    font-size: 4rem; /* Ещё больше уменьшаем размер текста */
-    letter-spacing: 0.02em; /* Минимальное расстояние между буквами */
+    font-size: 2rem; /* Очень маленький размер для маленьких экранов */
+    letter-spacing: 0.01em;
+    line-height: 1.2; /* Уменьшаем межстрочный интервал */
   }
 }
 
@@ -85,14 +104,22 @@ body {
   box-sizing: border-box; /* Учитываем отступы в размерах */
 }
 
-/* Фиксированное пространство для курсора */
+/* Контейнер для карточек */
+.container.mx-auto.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 100%;
+  margin: 0 auto; /* Центрируем контейнер */
+}
+
+/* Стиль курсора */
 .typed-cursor {
-  font-family: 'Sen', sans-serif;
-  font-weight: 800;
-  font-size: 8rem;
-  color: white;
-  opacity: 1;
-  animation: blink 1s infinite;
+  font-family: 'Sen', sans-serif; /* Используем тот же шрифт, что и заголовок */
+  font-weight: 800; /* Жирность шрифта */
+  font-size: clamp(4rem, 12vw, 8rem); /* Размер текста такой же, как у заголовка */
+  color: white; /* Цвет курсора */
+  opacity: 1; /* Начальная видимость */
+  animation: blink 1s infinite; /* Мигание курсора */
 }
 
 /* Анимация мигания курсора */
@@ -102,6 +129,20 @@ body {
   }
   50% {
     opacity: 0;
+  }
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+  .typed-cursor {
+    font-size: 6rem; /* Уменьшаем размер курсора */
+  }
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 480px) {
+  .typed-cursor {
+    font-size: 2rem; /* Ещё больше уменьшаем размер курсора */
   }
 }
 
