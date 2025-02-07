@@ -50,7 +50,7 @@ const Index = () => {
       ></div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/0"></div>
 
       {/* Hero Title */}
       <div className="relative z-10 h-screen flex items-center justify-center">
