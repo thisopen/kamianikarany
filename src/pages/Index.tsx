@@ -71,7 +71,7 @@ const Index = () => {
             {/* Кольца */}
             <a href="/rings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
               <div
-                className="w-44 h-24 md:w-30 md:h-20 lg:w-80 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                className="w-full h-40 bg-cover bg-center rounded-lg mb-4"
                 style={{ backgroundImage: "url('/images/rings-icon.png')" }}
               ></div>
               <span className="font-semibold">Кольца</span>
@@ -80,7 +80,7 @@ const Index = () => {
             {/* Серьги */}
             <a href="/earrings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
               <div
-                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                className="w-full h-40 bg-cover bg-center rounded-lg mb-4"
                 style={{ backgroundImage: "url('/images/earrings-icon.png')" }}
               ></div>
               <span className="font-semibold">Серьги</span>
@@ -89,7 +89,7 @@ const Index = () => {
             {/* Подвески */}
             <a href="/pendants" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
               <div
-                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                className="w-full h-40 bg-cover bg-center rounded-lg mb-4"
                 style={{ backgroundImage: "url('/images/pendants-icon.png')" }}
               ></div>
               <span className="font-semibold">Подвески</span>
@@ -98,7 +98,7 @@ const Index = () => {
             {/* Столы */}
             <a href="/tables" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
               <div
-                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                className="w-full h-40 bg-cover bg-center rounded-lg mb-4"
                 style={{ backgroundImage: "url('/images/tables-icon.png')" }}
               ></div>
               <span className="font-semibold">Столы</span>
@@ -107,7 +107,7 @@ const Index = () => {
             {/* Светильники */}
             <a href="/lights" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
               <div
-                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                className="w-full h-40 bg-cover bg-center rounded-lg mb-4"
                 style={{ backgroundImage: "url('/images/lights-icon.png')" }}
               ></div>
               <span className="font-semibold">Светильники</span>
