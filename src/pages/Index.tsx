@@ -16,7 +16,7 @@ const Index = () => {
   useEffect(() => {
     // Настройки Typed.js
     const options = {
-      strings: ["kamianikarani"], // Текст для 
+      strings: ["kamianikarani"], // Текст для печататния
       typeSpeed: 170, // Скорость печатания
       showCursor: true, // Показывать курсор
       cursorChar: "|", // Символ курсора
@@ -63,93 +63,54 @@ const Index = () => {
         ></h1>
       </div>
 
-      {/* Products Section */}
-      <section className="relative z-10 bg-black/40 py-16 min-h-screen">
+      {/* Catalog Section */}
+      <section className="relative z-10 bg-black/0 py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-            {/* Card 1 */}
-            <a href="/rings">
-              <Card className="bg-black/30 border-0 backdrop-blur-sm text-white opacity-0 animate-fade-in hover:border hover:border-white transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Кольца</CardTitle>
-                  <CardDescription className="text-white/70">
-                    Уникальные изделия из татранской древесины
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
-                    Каждое кольцо создается из древесины, собранной во время наших походов в Татры. Мы тщательно отбираем материал, который природа дарит нам во время каждого хайка в горы, превращая его в уникальные украшения, хранящие дух этих величественных гор.
-                  </p>
-                </CardContent>
-              </Card>
+          <h2 className="text-white text-center text-3xl font-bold mb-8">Каталог продукции</h2>
+          <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-5 gap-8">
+            {/* Кольца */}
+            <a href="/rings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <div
+                className="w-44 h-24 md:w-30 md:h-20 lg:w-80 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                style={{ backgroundImage: "url('/images/rings-icon.png')" }}
+              ></div>
+              <span className="font-semibold">Кольца</span>
             </a>
 
-            {/* Card 2 */}
-            <a href="/rings">
-              <Card className="bg-black/30 border-0 backdrop-blur-sm text-white opacity-0 animate-fade-in hover:border hover:border-white transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Кольца</CardTitle>
-                  <CardDescription className="text-white/70">
-                    Уникальные изделия из татранской древесины
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
-                    Каждое кольцо создается из древесины, собранной во время наших походов в Татры. Мы тщательно отбираем материал, который природа дарит нам во время каждого хайка в горы, превращая его в уникальные украшения, хранящие дух этих величественных гор.
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Серьги */}
+            <a href="/earrings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <div
+                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                style={{ backgroundImage: "url('/images/earrings-icon.png')" }}
+              ></div>
+              <span className="font-semibold">Серьги</span>
             </a>
 
-            {/* Card 3 */}
-            <a href="/rings">
-              <Card className="bg-black/30 border-0 backdrop-blur-sm text-white opacity-0 animate-fade-in hover:border hover:border-white transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Кольца</CardTitle>
-                  <CardDescription className="text-white/70">
-                    Уникальные изделия из татранской древесины
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
-                    Каждое кольцо создается из древесины, собранной во время наших походов в Татры. Мы тщательно отбираем материал, который природа дарит нам во время каждого хайка в горы, превращая его в уникальные украшения, хранящие дух этих величественных гор.
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Подвески */}
+            <a href="/pendants" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <div
+                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                style={{ backgroundImage: "url('/images/pendants-icon.png')" }}
+              ></div>
+              <span className="font-semibold">Подвески</span>
             </a>
 
-            {/* Card 4 */}
-            <a href="/earrings">
-              <Card className="bg-black/30 border-0 backdrop-blur-sm text-white opacity-0 animate-fade-in [animation-delay:200ms] hover:border hover:border-white transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Серьги</CardTitle>
-                  <CardDescription className="text-white/70">
-                    Ручная работа в каждой детали
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
-                    Все наши серьги создаются вручную с особым вниманием к каждой детали. Мы бережно обрабатываем каждый элемент, создавая неповторимые украшения, которые сочетают в себе природную красоту дерева и мастерство ручной работы.
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Столы */}
+            <a href="/tables" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <div
+                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                style={{ backgroundImage: "url('/images/tables-icon.png')" }}
+              ></div>
+              <span className="font-semibold">Столы</span>
             </a>
 
-            {/* Card 5 */}
-            <a href="/lights">
-              <Card className="bg-black/30 border-0 backdrop-blur-sm text-white opacity-0 animate-fade-in [animation-delay:400ms] hover:border hover:border-white transition-all duration-300">
-                <CardHeader>
-                  <CardTitle className="text-white">Письки</CardTitle>
-                  <CardDescription className="text-white/70">
-                    Природное освещение вашего дома
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-white/80">
-                    Наши светильники создаются из тщательно отобранных пней и дубовой древесины. Каждый светильник уникален, так как мы сохраняем естественную структуру дерева, подчеркивая его природную красоту современным освещением.
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Светильники */}
+            <a href="/lights" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <div
+                className="w-44 h-24 md:w-24 md:h-24 lg:w-60 lg:h-40 bg-cover bg-center rounded-lg mb-4"
+                style={{ backgroundImage: "url('/images/lights-icon.png')" }}
+              ></div>
+              <span className="font-semibold">Светильники</span>
             </a>
           </div>
         </div>
