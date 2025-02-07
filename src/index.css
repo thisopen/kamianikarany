@@ -56,10 +56,11 @@ body {
 .project-title {
   font-family: 'Sen', sans-serif; /* Применяем Sen ExtraBold */
   font-weight: 800; /* Жирность шрифта */
-  font-size: 8rem; /* Размер текста */
+  font-size: clamp(4rem, 12vw, 8rem); /* Относительный размер текста */
   letter-spacing: 0.1em; /* Расстояние между буквами */
   text-transform: lowercase; /* Стиль текста */
   white-space: pre; /* Фиксируем позицию текста */
+  text-align: center; /* Центрируем текст */
 }
 
 /* Адаптация для планшетов */
@@ -76,6 +77,12 @@ body {
     font-size: 4rem; /* Ещё больше уменьшаем размер текста */
     letter-spacing: 0.02em; /* Минимальное расстояние между буквами */
   }
+}
+
+/* Контейнер для заголовка */
+.relative.z-10.h-screen.flex.items-center.justify-center {
+  padding: 20px; /* Добавляем отступы для мобильных устройств */
+  box-sizing: border-box; /* Учитываем отступы в размерах */
 }
 
 /* Фиксированное пространство для курсора */
