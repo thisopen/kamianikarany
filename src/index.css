@@ -104,14 +104,6 @@ body {
   box-sizing: border-box; /* Учитываем отступы в размерах */
 }
 
-/* Контейнер для карточек */
-.container.mx-auto.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 100%;
-  margin: 0 auto; /* Центрируем контейнер */
-}
-
 /* Стиль курсора */
 .typed-cursor {
   font-family: 'Sen', sans-serif; /* Используем тот же шрифт, что и заголовок */
@@ -141,8 +133,8 @@ body {
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 480px) {
-  .typed-cursor {
-    font-size: 2rem; /* Ещё больше уменьшаем размер курсора */
+  .grid.grid-cols-1.md\:grid-cols-3.lg\:grid-cols-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Две колонки для мобильных */
   }
 }
 
@@ -150,6 +142,52 @@ body {
 .typed-finished {
   visibility: hidden; /* Скрываем курсор */
   width: 1ch; /* Занимаем место одного символа */
+}
+
+/* Фон сайта */
+.fixed.inset-0.z-0.bg-cover {
+  position: fixed;
+  z-index: 0; /* Фон ниже карточки */
+}
+
+/* Оверлей */
+.absolute.inset-0.bg-black\/40 {
+  z-index: 1; /* Оверлей ниже карточки */
+}
+
+/* Стиль для иконок /////////////////////////////////////////////////////////////////////// */
+.w-16.h-16.bg-cover.bg-center.rounded-lg {
+  width: 4rem; /* Ширина иконки */
+  height: 4rem; /* Высота иконки */
+  background-size: cover; /* Растягиваем изображение */
+  background-position: center; /* Центрируем изображение */
+  border-radius: 8px; /* Делаем скругленные углы */
+}
+
+/* Базовый размер для мобильных */
+.icon {
+  width: 5rem; /* 80px */
+  height: 5rem; /* 80px */
+}
+
+/* Размер для планшетов */
+@media (min-width: 768px) {
+  .icon {
+    width: 6rem; /* 96px */
+    height: 6rem; /* 96px */
+  }
+}
+
+/* Размер для десктопов */
+@media (min-width: 3000px) {
+  .icon {
+    width: 15vw; /* Ширина зависит от ширины экрана */
+    height: 15vw; /* Высота пропорциональна ширине */
+    background-size: cover; /* Растягиваем изображение */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Запрещаем повторение */
+    border-radius: 8px; /* Скругляем углы */
+  }
 }
 
 @layer base {
