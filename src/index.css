@@ -60,6 +60,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: lowercase;
   text-align: center; /* Центрируем текст */
+  white-space: nowrap; /* Запрещаем перенос текста */
 }
 
 /* Адаптация сетки для мобильных устройств */
@@ -95,12 +96,17 @@ body {
     font-size: 2rem; /* Очень маленький размер для маленьких экранов */
     letter-spacing: 0.01em;
     line-height: 1.2; /* Уменьшаем межстрочный интервал */
+    padding: 0 1rem; /* Добавляем внутренние отступы, чтобы текст не касался краев экрана */
   }
 }
 
 /* Контейнер для заголовка */
 .relative.z-10.h-screen.flex.items-center.justify-center {
-  padding: 20px; /* Добавляем отступы для мобильных устройств */
+  display: flex; /* Используем Flexbox */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  height: 100vh; /* Высота контейнера равна высоте экрана */
+  padding: 0 1rem; /* Добавляем отступы по бокам */
   box-sizing: border-box; /* Учитываем отступы в размерах */
 }
 
@@ -108,7 +114,7 @@ body {
 .typed-cursor {
   font-family: 'Sen', sans-serif; /* Используем тот же шрифт, что и заголовок */
   font-weight: 800; /* Жирность шрифта */
-  font-size: clamp(4rem, 12vw, 8rem); /* Размер текста такой же, как у заголовка */
+  font-size: clamp(4rem, 10vw, 6rem); /* Размер текста такой же, как у заголовка */
   color: white; /* Цвет курсора */
   opacity: 1; /* Начальная видимость */
   animation: blink 1s infinite; /* Мигание курсора */
@@ -127,14 +133,14 @@ body {
 /* Адаптация для планшетов */
 @media (max-width: 768px) {
   .typed-cursor {
-    font-size: 6rem; /* Уменьшаем размер курсора */
+    font-size: 3rem; /* Уменьшаем размер курсора */
   }
 }
 
 /* Адаптация для мобильных устройств */
 @media (max-width: 480px) {
-  .grid.grid-cols-1.md\:grid-cols-3.lg\:grid-cols-5 {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Две колонки для мобильных */
+  .typed-cursor {
+    font-size: 2rem; /* Ещё больше уменьшаем размер курсора */
   }
 }
 
