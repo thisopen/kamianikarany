@@ -52,6 +52,45 @@ body {
   font-style: normal;
 }
 
+/* Фиксированный фон */
+.fixed-background {
+  position: fixed; /* Фиксируем фон */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Размещаем фон позади контента */
+  background-image: url('/images/background-image.jpg');
+  background-size: cover; /* Растягиваем фон */
+  background-position: center; /* Центрируем фон */
+  background-repeat: no-repeat; /* Запрещаем повторение */
+}
+
+/* Фиксированный фон для десктопов */
+.fixed-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url('/images/background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .fixed-background {
+    position: absolute; /* Используем абсолютное позиционирование */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Высота равна высоте экрана */
+  }
+}
+
 /* Стили для заголовка проекта */
 .project-title {
   font-family: 'Sen', sans-serif;
@@ -69,7 +108,7 @@ body {
   gap: 1rem; /* Меньший отступ для мобильных */
 }
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .grid.grid-cols-1.md\:grid-cols-5.gap-8 {
     grid-template-columns: repeat(2, minmax(0, 1fr)); /* Две колонки для планшетов */
     gap: 2rem; /* Больший отступ для планшетов */
@@ -84,14 +123,14 @@ body {
 }  
 
 /* Адаптация для планшетов */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .project-title {
     letter-spacing: 0.05em;
   }
 }
 
 /* Адаптация для мобильных устройств */
-@media (max-width: 480px) {
+@media (max-width: 460px) {
   .project-title {
     font-size: 2rem; /* Очень маленький размер для маленьких экранов */
     letter-spacing: 0.01em;
@@ -131,14 +170,14 @@ body {
 }
 
 /* Адаптация для планшетов */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .typed-cursor {
     font-size: 3rem; /* Уменьшаем размер курсора */
   }
 }
 
 /* Адаптация для мобильных устройств */
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .typed-cursor {
     font-size: 2rem; /* Ещё больше уменьшаем размер курсора */
   }
@@ -177,7 +216,7 @@ body {
 }
 
 /* Размер для планшетов */
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .icon {
     width: 6rem; /* 96px */
     height: 6rem; /* 96px */
@@ -196,17 +235,17 @@ body {
   }
 }
 
-/* Контейнер для горизонтальной прокрутки ////////////////////////////////*/
+/* Контейнер для горизонтальной прокрутки /////////////////////////////////////////////////// */
 .horizontal-scroll-container {
   overflow-x: auto; /* Включаем горизонтальную прокрутку */
   white-space: nowrap; /* Запрещаем перенос элементов на новую строку */
-  scrollbar-width: none; /* Убираем полосу прокрутки (для Firefox) */
-  -ms-overflow-style: none; /* Убираем полосу прокрутки (для IE и Edge) */
+  scrollbar-width: none; /* Скрываем полосу прокрутки (для Firefox) */
+  -ms-overflow-style: none; /* Скрываем полосу прокрутки (для IE и Edge) */
 }
 
 /* Скрываем полосу прокрутки для WebKit-браузеров (Chrome, Safari) */
-.horizontal-scroll-container::-webkit-scrollbar {
-  display: none; /* Полностью скрываем полосу прокрутки */
+.horizontal-scroll-container {
+  overscroll-behavior: contain; /* Изолируем прокрутку внутри контейнера */
 }
 
 /* Элементы внутри контейнера */
