@@ -233,7 +233,7 @@ body {
 }
 
 /* Размеры для десктопов */
-@media (max-width: 1900px) {
+@media (max-width: 1520px) {
   .icon {
     height: 300px !important; /* Уменьшенная высота для мобильных устройств */
   }
