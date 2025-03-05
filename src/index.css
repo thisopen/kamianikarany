@@ -215,7 +215,7 @@ body {
   background-repeat: no-repeat; /* Запрещаем повторение */
   overflow: hidden;
   border-radius: 0; /* Убираем скругление углов */
-  border: 0px solid red;
+  border: 1px solid red;
 }
 
 /* Размеры для мобильных устройств */
@@ -228,14 +228,14 @@ body {
 /* Размеры для планшетов */
 @media (max-width: 768px) {
   .icon {
-    height: 300px; /* Уменьшенная высота для мобильных устройств */
+    height: 300px!important; /* Уменьшенная высота для мобильных устройств */
   }
 }
 
 /* Размеры для десктопов */
-@media (max-width: 1024px) {
+@media (max-width: 1500px) {
   .icon {
-    height: 500px; /* Уменьшенная высота для мобильных устройств */
+    height: 300px !important; /* Уменьшенная высота для мобильных устройств */
   }
 }
 /* Стиль для текста под иконками */
