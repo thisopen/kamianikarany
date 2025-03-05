@@ -207,38 +207,35 @@ body {
 
 /* Базовый стиль для иконок */
 .icon {
+  position: relative; /* Обязательно для правильного позиционирования дочерних элементов */
   width: 100%; /* Ширина равна ширине родительского контейнера */
-  height: 100%; /* Высота равна высоте родительского контейнера */
+  height: 500px; /* Высота равна высоте родительского контейнера */
   background-size: cover; /* Растягиваем изображение */
   background-position: center; /* Центрируем изображение */
   background-repeat: no-repeat; /* Запрещаем повторение */
+  overflow: hidden;
   border-radius: 0; /* Убираем скругление углов */
-  border: 2px solid red;
+  border: 1px solid red;
 }
 
 /* Размеры для мобильных устройств */
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .icon {
-    height: 50vh; /* Высота равна 50% высоты экрана */
+    height: 200px !important; /* Уменьшенная высота для мобильных устройств */
   }
 }
 
 /* Размеры для планшетов */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .icon {
-    width: 6rem; /* 96px */
-    height: 6rem; /* 96px */
+    height: 300px; /* Уменьшенная высота для мобильных устройств */
   }
 }
 
 /* Размеры для десктопов */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .icon {
-    width: 100%; /* Ширина зависит от ширины экрана */
-    height: 100%; /* Высота пропорциональна ширине */
-    background-size: cover; /* Растягиваем изображение */
-    background-position: center; /* Центрируем изображение */
-    background-repeat: no-repeat; /* Запрещаем повторение */
+    height: 500px; /* Уменьшенная высота для мобильных устройств */
   }
 }
 /* Стиль для текста под иконками */
