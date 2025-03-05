@@ -70,7 +70,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/rings-icon.png')" }}
                 >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание колец</span>
                   </div>
                 </div>   
@@ -81,7 +81,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/earrings-icon.png')" }}
                   >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание сережек</span>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/pendants-icon.png')" }}
                 >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание подвесок</span>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/tables-icon.png')" }}
                 >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание столов</span>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/lights-icon.png')" }}
                 >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание светильников</span>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const Index = () => {
                   className="icon bg-cover bg-center w-full h-full overflow-hidden"
                   style={{ backgroundImage: "url('/images/Poster1.jpg')" }}
                 >
-                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-end justify-start pl-2 pb-2 opacity-0 hover:opacity-100 transition-opacity">
                     <span className="text-white font-semibold">Описание постеров</span>
                   </div>
                 </div>
