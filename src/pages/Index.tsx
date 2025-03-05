@@ -63,85 +63,90 @@ const Index = () => {
       {/* Catalog Section */}
         <section className="relative z-10 bg-black/0 py-2">
           <div className="container mx-auto px-0">   
-            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-6 gap-2">
+            <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-6 gap-1">
               {/* Кольца */}
-              <a href="#rings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#rings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/rings-icon.png')",
-                    height: '500px', // Высота фона
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Кольца</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/rings-icon.png')" }}
+                >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание колец</span>
+                  </div>
+                </div>   
               </a>
-
               {/* Серьги */}
-              <a href="#earrings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#earrings" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/earrings-icon.png')",
-                    height: '500px',
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Серьги</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/earrings-icon.png')" }}
+                  >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание сережек</span>
+                  </div>
+                </div>
               </a>
-
               {/* Подвески */}
-              <a href="#pendants" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#pendants" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/pendants-icon.png')",
-                    height: '500px',
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Подвески</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/pendants-icon.png')" }}
+                >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание подвесок</span>
+                  </div>
+                </div>
               </a>
-
               {/* Столы */}
-              <a href="#tables" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#tables" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/tables-icon.png')",
-                    height: '500px',
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Столы</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/tables-icon.png')" }}
+                >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание столов</span>
+                  </div>
+                </div>
               </a>
-
               {/* Светильники */}
-              <a href="#lights" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#lights" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/lights-icon.png')",
-                    height: '500px',
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Светильники</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/lights-icon.png')" }}
+                >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание светильников</span>
+                  </div>
+                </div>
               </a>
               {/* Постеры */}
-              <a href="#poster" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors">
+              <a href="#poster" className="flex flex-col items-center text-center text-white hover:text-gray-300 transition-colors relative">
                 <div
-                  className="w-full h-full bg-cover bg-center"
-                  style={{
-                    backgroundImage: "url('/images/Poster1.jpg')",
-                    height: '500px',
-                  }}
-                ></div>
-                <span className="font-semibold mt-4 text-xl">Постеры</span>
+                  className="icon bg-cover bg-center w-full h-full overflow-hidden"
+                  style={{ backgroundImage: "url('/images/Poster1.jpg')" }}
+                >
+                  <div className="absolute inset-0 bg-black bg-opacity-5 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                    <span className="text-white font-semibold">Описание постеров</span>
+                  </div>
+                </div>
               </a>
             </div>
           </div>
         </section>
+      {/* About Project Section */}
+      <section className="relative z-10 bg-black/0 py-8">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-white text-3xl font-bold mb-4">О проекте</h2>
+          <p className="text-gray-300 text-lg">
+            Здесь вы можете рассказать о своем проекте, его целях и миссии. Поделитесь интересной информацией, которая может заинтересовать ваших посетителей.
+          </p>
+        </div>
+      </section>
       {/* Products Sections */}
       <section className="relative z-10 bg-black/0 py-16">
         {/* Rings Section */}
         <div id="rings" className="container mx-auto px-0 mb-16">
-          <h2 className="text-white text-center text-3xl font-bold mb-8">Кольца</h2>
+          <h2 className="text-white text-left text-3xl font-bold mb-8">Кольца</h2>
           <HorizontalScroll>
             {/* Пример продукта */}
             <div className="bg-gray-800 rounded-lg p-4 text-center w-64">
@@ -232,15 +237,6 @@ const Index = () => {
               />
               <h3 className="text-white font-semibold">Корни</h3>
               <p className="text-gray-400">Лера сама их сделала</p>
-            </div>
-            <div className="bg-gray-800 rounded-lg p-4 text-center w-64">
-              <img
-                src="/images/earring-product-2.png"
-                alt="Earring Product 2"
-                className="w-full h-40 object-cover rounded-lg mb-4"
-              />
-              <h3 className="text-white font-semibold">Серьги 2</h3>
-              <p className="text-gray-400">Описание сережек</p>
             </div>
             <div className="bg-gray-800 rounded-lg p-4 text-center w-64">
               <img
